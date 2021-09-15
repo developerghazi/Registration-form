@@ -1,0 +1,90 @@
+.new-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.new-form label{
+    width:calc(100%/2 - 20px);
+    margin: 12px 0 10px 0;
+}
+.new-form label input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+#reg{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg,#86d3e17a,#9c59b657);
+}
+
+.container{
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+
+}
+
+form #button{
+
+    height: 45px;
+    margin:25px 0;
+}
+
+#button input:hover{
+    color: skyblue;
+    cursor: pointer;
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+}
+
+.new-form #button input{
+    height: 70%;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.new-form label{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 13px;
+    display: block;
+
+
+}
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    .new-form label{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .new-form{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
